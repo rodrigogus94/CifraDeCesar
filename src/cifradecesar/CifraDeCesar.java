@@ -44,11 +44,13 @@ public class CifraDeCesar {
    }
     public String Foca(int chave, int chaveD,String texto){
         
-        
+        int cont =0;
         while (chaveD <= chave) {
-
+           
             
             System.err.println("Tentativas de Descriptografar a senha:\n " + encriptar(chaveD, texto));
+            System.err.println("Senhas geradas" + cont );
+            cont++;
 
             if (chaveD == chave) {
                 System.err.println("*************************************************");
@@ -56,11 +58,17 @@ public class CifraDeCesar {
                 System.err.println("Texto Criptografada: " + encriptar(chave, texto));
                 System.err.println("Texto Decriptografada: " + decriptar(chave, encriptar(chaveD, texto)));
                 System.err.println("Tentativas de combinações de chaves: " + chaveD );
+                
+                
             }
 
             chaveD++;
         }
         return texto;
+        
+    }
+    
+    public String Foca(String textoCriptado){
         
     }
 }
