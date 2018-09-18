@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class TesteCifra {
 
-    public static void main(String[] args) {
+    public static void main(String[] RedHunter) {
         Random chaveRandom = new Random();
         int chave=0, opc = 1, chaveD = 1;
         
